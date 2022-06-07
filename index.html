@@ -1,21 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width,initial-scale=1.0">
-		<meta name="theme-color" content="#0000ae">
-		<link rel="icon" href="<%= BASE_URL %>favicon.ico">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
-		<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
-		<title>Geoguess Master - Free geoguess game</title>
-	  </head>
-	  <body>
-		<script src="https://maps.googleapis.com/maps/api/js?key=<%= VUE_APP_API_KEY %>"></script>
-		<noscript>
-		  <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-		</noscript>
-		<div id="app"></div>
-		<!-- built files will be auto injected -->
-	  </body>
-</html>	
+<html>
+  <head>
+    <title>Add Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script type="module" src="js/app.js"></script>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+
+    <!-- 
+     The `defer` attribute causes the callback to execute after the full HTML
+     document has been parsed. For non-blocking uses, avoiding race conditions,
+     and consistent behavior across browsers, consider loading using Promises
+     with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+    -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+      defer
+    ></script>
+	<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDut7D2w2m113vCgld9Qczpae0n8aEGmek
+    &callback=initMap">
+</script>
+  </body>
+</html>
