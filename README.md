@@ -2,5 +2,3 @@
 
 ## What?
 Sample test
-
-Gilson Nyirimana
