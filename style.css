@@ -1,0 +1,74 @@
+/* Map container */
+#map {
+    height: calc(100vh - 60px);
+    width: 80%;
+    padding-left: 500px;
+  }
+  
+  /* Guess form */
+  #guess-form {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  #guess-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #guess-form input[type="text"] {
+    width: 200px;
+    margin-bottom: 10px;
+  }
+  
+  #guess-form button {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  /* Result message */
+  #result-message {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+  }
+  
+  #result-message p {
+    margin: 0;
+  }
+  
+  /* Leaderboard */
+  #leaderboard {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: none;
+  }
+  
+  #leaderboard table {
+    width: 100%;
+  }
+  
+  #leaderboard table td {
+    padding: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #leaderboard table th {
+    padding: 5px;
+    border: 1px solid #ccc;
+    text-align: left;
+    background-color: #eee;
+  }
+  
